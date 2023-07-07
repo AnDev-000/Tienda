@@ -1,0 +1,371 @@
+
+#formulario__modificar{
+    margin: auto;
+	display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background: #fff;
+    /* border-top: 4px solid #08c; */
+    border-top: 4px solid rgb(205, 92, 92);
+    padding: 35px 25px 0;
+    /* height: 0px 0px 0px 0px; */
+    box-shadow: 0 2px 3px rgb(0 0 0 / 8%);
+    width: 100%;
+}
+
+fieldset div{
+    margin-bottom: 10px;
+}
+
+.img-perfilUsuario{
+    display: block;
+    margin: 0px auto;
+    border-style: none;
+    width: 100%;
+    /* background: yellowgreen; */
+}
+
+.img-perfilUsuario img{
+    margin: 0px auto;
+    height: 150px;
+    width: 150px;
+    /* background: chartreuse; */
+    border-radius: 50%;
+}
+
+.img-perfilUsuario input{
+    display: none;
+    /* border-style: none;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; */
+}
+
+.img-perfilUsuario label{
+    display: block;
+    padding: 8px 21px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #eee;
+    width: 138px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.img-perfilUsuario h3{
+    text-align: center;
+    display: none; /*---Recordad Borrar: Buscar mas tarde solucion para que se muestre el tipo de archivo-----*/
+}
+
+/* #btn-label{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+} */
+
+.datosPersonales{
+    display: block;
+    margin: 10px 0px 10px 0px;
+    border-style: none;
+    width: 100%;
+}
+
+.datosPersonales legend{
+    padding: 0;
+    border: 0;
+    /* color: #08c; */
+    color: rgb(205, 92, 92);
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+.datosCuenta{
+    display: block;
+    margin: 10px 0px 10px 0px;
+    border-style: none;
+    width: 100%;
+}
+
+
+.datosCuenta legend{
+    padding: 0;
+    border: 0;
+    /* color: #08c; */
+    color: rgb(205, 92, 92);
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+legend{
+    margin: 0px 0px 5px 5px;
+}
+
+.label{
+	width:180px;
+	text-align: left;
+	margin:5px 0px 0px 10px;
+}
+
+.cambiar-checkbox{
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.cambiar-checkbox span{
+    line-height: 26px;
+    font-size: 16px;
+    color: #707070;
+}
+
+
+.modificar__grupo-input {
+	position: relative;
+}
+
+.modificar__input{
+    width: 85%;
+    background: #fff;
+    border: 1px solid;
+    border-radius: 0;
+    height: 38px;
+    line-height: 1.4;
+    padding: 9px 13px;
+    transition: .3s ease all;
+    margin: 5px 0px 5px 13px;
+}
+
+/*Cuador azul para los input*/
+.modificar__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+/*Mensaje de error para los input no mostrado*/
+.modificar__input-error {
+    font-size: 12px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    display: none;
+}
+
+/*Aparicion de mensaje de error*/
+.modificar__input-error-activo{
+    display:block;
+}
+
+/*Icono de validacion*/
+.modificar__validacion-estado {
+    position: absolute;
+    right: 25px;
+    bottom: 14px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+/*Estilo de validacion*/
+
+.modificar__grupo-correcto .modificar__validacion-estado {
+    color: #4fa055;
+    opacity: 1;
+}
+
+.modificar__grupo-incorrecto{
+    color: #bb2929;
+}
+
+.modificar__grupo-incorrecto .modificar__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.modificar__grupo-incorrecto .modificar__input {
+    border: 3px solid #bb2929;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.label span{
+    margin: 0px 0px 0px 0px;
+}
+
+/* ---Estilo para iniciar con el los datos de contraseña oculto----*/
+/* .datosCuenta{
+    position: absolute;
+    overflow: hidden;
+} */
+
+
+/*---Btns inferiores-----------------------------*/
+
+.botonesAccion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.btn-izquierda{
+    margin-bottom: 15px;
+    width: 126px;
+    text-align: center;
+}
+.btn-derecha{
+    margin-bottom: 15px;
+    width: 126px;
+    text-align: center;
+}
+
+.btnEnviar{
+    color: #fff;
+    /* background: #477AFA; */
+    background: rgb(205, 92, 92);
+    padding: 7px 15px !important;
+    border-radius: 0;
+    /* font-family: 'Oswald';
+    text-transform: uppercase; */
+    font-size: 13px;
+    line-height: 20px;
+    /* border: 1px solid #477afa; */
+    border: 1px solid rgb(205, 92, 92);
+    display: inline-flex;
+    height: 38px;
+    cursor: pointer;
+}
+
+.btnEnviar:hover{
+    background: #5F5F5F !important;
+    border-color: #5F5F5F !important;
+}
+
+
+.btn-reset{
+    color: #fff;
+    /* background: #477AFA; */
+    background: rgba(77, 77, 77, 0.699);
+    padding: 7px 15px !important;
+    border-radius: 0;
+    /* font-family: 'Oswald';
+    text-transform: uppercase; */
+    font-size: 13px;
+    line-height: 20px;
+    /* border: 1px solid #477afa; */
+    border: 1px solid rgb(205, 92, 92);
+    display: inline-flex;
+    height: 38px;
+    cursor: pointer;
+}
+
+.btn-reset:hover{
+    background: #5F5F5F !important;
+    border-color: #5F5F5F !important;
+}
+
+/* .centro{
+	text-align: center;
+	
+} */
+
+
+
+
+
+@media screen and (min-width:480px) {
+    #formulario__modificar{   
+        width: 311px;
+    }
+
+    .modificar__input{
+        width: 230px;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+    #formulario__modificar{   
+        width: 385px;
+    }
+
+    .modificar__input{
+        width: 285px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width:768px) {
+    #formulario__modificar{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .img-perfilUsuario img{
+        margin: auto;
+    }
+
+    .botonesAccion{
+        justify-content: center;
+    }
+    .datosPersonales{
+        width: 49%;
+    }
+    .datosCuenta{
+        width: 49%;
+    }
+    .modificar__input{
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    #formulario__modificar{
+        
+        width: 690px;
+    }
+
+    .modificar__input{
+        width: 285px;
+    }
+}

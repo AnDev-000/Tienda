@@ -1,0 +1,131 @@
+
+.container-main{
+    margin-top: 30px;
+}
+
+.titulo-administrador{
+    text-align: center;
+    margin-top: 10;
+    color: rgb(205, 92, 92);
+    text-transform: uppercase;
+    margin: 0px 0px 20px 20px;
+
+
+
+}
+
+
+.editar-usuarios{
+    position: center;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background: #fff;
+    /* border-top: 4px solid #08c; */
+    border-top: 4px solid rgb(205, 92, 92);
+    box-shadow: 0 2px 3px rgb(0 0 0 / 8%);
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+.row{
+    margin-bottom: 10px;
+}
+
+
+
+#btnActualizar{
+    width: 160px;
+    height: auto;
+    color: #fff;
+    background: rgb(205, 92, 92);
+    padding: 7px 15px !important;
+    border-radius: 1px;
+    font-size: 13px;
+    border: 1px solid rgb(205, 92, 92);
+    cursor: pointer;
+}
+
+
+.input-group-editar{
+
+    text-align: center;
+    height: 30px;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-right: 5px;
+	background: #fff;
+	border: 1px solid;
+	transition: .3s ease all;
+
+
+
+}
+
+.input-group-editar:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+
+
+
+@media screen and (min-width:480px) {
+
+    .editar-usuarios input{
+        height: 30px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .editar-usuarios{
+        text-align: center;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (min-width:600px) {
+    
+    .editar-usuarios input{
+        width: 45%;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    .editar-usuarios{
+        text-align: center;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:768px) {
+
+    .editar-usuarios input{
+        width: 48%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .editar-usuarios{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .editar-usuarios input{
+        width: 24%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+
+    
+}

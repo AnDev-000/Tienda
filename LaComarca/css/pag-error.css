@@ -1,0 +1,32 @@
+.mensaje-pag{
+    margin: 25px auto;
+	display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background: #fff;
+    /* border-top: 4px solid #08c; */
+    border-top: 4px solid rgb(205, 92, 92);
+    padding: 35px 25px 0;
+    /* height: 0px 0px 0px 0px; */
+    box-shadow: 0 2px 3px rgb(0 0 0 / 8%);
+    width: 70%;
+    height: 30%;
+}
+
+.mensaje-pag .titulo{
+    width: 100%;
+}
+
+.mensaje-pag h1{
+    color: black;
+    font-size: 30px;
+    margin: 0 0 15px 5px;
+}
+
+h3{
+    padding-bottom: 50px;
+}
+
+
+

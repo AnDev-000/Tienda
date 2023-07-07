@@ -1,0 +1,255 @@
+
+.container-main{
+    margin-top: 30px;
+}
+
+.titulo-administrador{
+    text-align: center;
+    margin-top: 10;
+    color: rgb(205, 92, 92);
+    text-transform: uppercase;
+    margin: 0px 0px 20px 0px;
+
+
+
+}
+
+
+
+
+.nuevos-usuarios{
+    position: center;
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background: #fff;
+    /* border-top: 4px solid #08c; */
+    border-top: 4px solid rgb(205, 92, 92);
+    box-shadow: 0 2px 3px rgb(0 0 0 / 8%);
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+.row{
+    margin-bottom: 10px;
+}
+
+
+.tabla-modificar-usuarios{
+    position: center;
+
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    background: #fff;
+    /* border-top: 4px solid #08c; */
+    border-top: 4px solid rgb(205, 92, 92);
+    box-shadow: 0 2px 3px rgb(0 0 0 / 8%);
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+.tabla{
+    position: center;
+    margin: auto;
+    width: 100%;
+}
+
+
+.nuevos-usuarios input{
+    height: 30px;
+}
+
+#btnNuevo{
+    width: 160px;
+    height: auto;
+    color: #fff;
+    background: rgb(205, 92, 92);
+    padding: 7px 15px !important;
+    border-radius: 1px;
+    font-size: 13px;
+    border: 1px solid rgb(205, 92, 92);
+    cursor: pointer;
+}
+
+
+.input-group-nuevo{
+
+    text-align: center;
+    height: 30px;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-right: 5px;
+	background: #fff;
+	border: 1px solid;
+	transition: .3s ease all;
+
+
+
+}
+
+.input-group-nuevo:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+
+thead th{
+    height: 40px;
+    border-radius: 5px;
+    
+}
+tbody td{
+    height: 50px;
+}
+
+td input{
+    text-align: center;
+    height: 30px;
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-right: 5px;
+
+}
+.btn-group button{
+    width: 80px;
+    height: auto;
+    color: #fff;
+    background: rgb(205, 92, 92);
+    padding: 7px 15px !important;
+    border-radius: 1px;
+    font-size: 13px;
+    line-height: 20px;
+    border: 1px solid rgb(205, 92, 92);
+    cursor: pointer;
+    margin-bottom: 4px;
+
+}
+.button-link{
+    width: 40%;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 3px;
+    text-align: center;
+}
+
+
+@media screen and (min-width:480px) {
+
+    .nuevos-usuarios input{
+        height: 30px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .nuevos-usuarios{
+        text-align: center;
+    }
+
+
+
+
+
+
+    thead th{
+        height: 40px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    tbody td{
+        height: 50px;
+    }
+    
+    td input{
+        font-size: 12px;
+    
+    }
+    .btn-group button{
+        width: 80px;
+        height: 35px;
+        margin-bottom: 4px;
+        
+    }
+    .button-link{
+        font-size: 12px;
+        padding: 0px;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (min-width:600px) {
+    
+    .nuevos-usuarios input{
+        width: 45%;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+    .nuevos-usuarios{
+        text-align: center;
+    }
+
+
+    thead th{
+        height: 40px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    tbody td{
+        height: 50px;
+    }
+    
+    td input{
+        font-size: 14px;
+    
+    }
+    .btn-group button{
+        width: 80px;
+        height: 35px;
+        margin-bottom: 4px;
+        
+    }
+    .button-link{
+        font-size: 13px;
+        padding: 0px;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:768px) {
+
+    .nuevos-usuarios input{
+        width: 48%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+
+
+
+    .nuevos-usuarios{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .nuevos-usuarios input{
+        width: 24%;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .btn-group button{
+        width: 80px;
+        height: 35px;
+        margin-bottom: 4px;
+        
+    }
+}

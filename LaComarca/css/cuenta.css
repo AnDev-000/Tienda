@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,700;1,400&family=Pacifico&family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+/*---Estilos base----------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%; 
+    margin: auto;
+}
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+}
+
+
+header{
+    width: 100%;
+    /* height: 100px;
+    background-image: url(../img/banner8.png);
+    background-position: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 1px black; */
+}
+
+.container-main{
+    /* min-height-footer se mantiene en pie de pagina */
+    min-height: calc(100vh - 194px - 319px); 
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+
+
+
+
+/*---Estilos header-------------------------------------------------------------------------*/
+.main-header {
+    width: 100%;
+    height: 194px;
+    background-color: rgba(0, 0, 0, 0.2);
+;
+}
+
+.logo{
+    font-size: 3em;
+    color: rgb(205, 92, 92);
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+/* -----Estilos del Banner--------------------------------------------------------*/
+.banner{
+    margin-top: -105px;
+    position: relative;
+    display: none;
+}
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    top: 0;
+}
+
+.banner__img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.banner__content {
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*---Estilos del footer-----------------------------------------------------------------------*/
+.main-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+    /* height: 350px; */
+}
+
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main-footer [class*="icon-"]{
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer [class*="icon-"]:before{
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+/*----------------------------------------------------------------------*/
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    /* -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
+    background-color: rgb(207, 81, 81, 0.9);
+    border-radius: 5px;
+    color: white;
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    /* color: #46A2FD; */
+    color: rgb(205, 92, 92);
+    border: 2px solid black;
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* color: #46A2FD; */
+    color: black;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    /* background: #46A2FD; */
+    background: rgb(205, 92, 92);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+.contenedor__login-register form button:hover{
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 1px solid;
+	border-radius: 3px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+    margin-top: 20px;
+}
+
+/*Cuador azul para los input*/
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+/*Mensaje de error para los input no mostrado*/
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    display: none;
+}
+
+/*Aparicion de mensaje de error*/
+.formulario__input-error-activo{
+    display:block;
+}
+
+/*Icono de validacion*/
+.formulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 9px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__mensaje {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin-top: 15px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+
+/*Estilo de validacion*/
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #4fa055;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto{
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---Estilos responsive - Media query-----------------------------------------------------------*/
+@media screen and (min-width:480px) {
+    /* ---Estilos basse--- */
+    
+    .container {
+        font-size: 13px;
+    }
+
+    .logo {
+        color: white;
+        font-size: 1.8em;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .main-header {
+        height: 110px;
+    }
+
+    .container-main {
+        padding-bottom: 30px;
+    }
+
+    .banner {
+        margin-top: -110px;
+        z-index: -1000;
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner__img {
+        height: 970px;
+    }
+
+    .main-footer .container{
+        align-items: flex-start;
+    }
+
+    .column--50 {
+        width: 49%;
+    }
+
+    .column--50-25 {
+        width: 49%; 
+    }
+
+    .column--33 {
+        width: 32%; 
+    }
+
+    .column--30{
+        width: 30%; 
+    }
+    .column--70{
+        width: 70%;
+    }
+    .container-main{
+        /* border: 10px solid red; */
+    
+        /*para que el footer quede siempre posicionado en la parte baja de la pagina*/
+        min-height: calc(100vh - 110px - 283px); /* 100vh = container
+                                                100px= altura(height) del header
+                                                300px= altura(height) del footer*/
+        /*MODIFICAR ESTE EN LAS DEMAS RESOLUCIONES*/
+    }
+    
+
+}
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        width: 1000px;
+    }
+}

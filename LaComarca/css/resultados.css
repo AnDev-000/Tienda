@@ -1,0 +1,303 @@
+/*---Estilos columna Lista de resultados---------*/
+
+/*---lista de productos-----------*/
+.columna2 {
+    margin: 3% 0%;
+}
+
+/*---wrapper de productos---------*/
+
+.item-resultado {
+    margin: 2% 0%;
+    width: 450px;
+    height: 200px;
+    background: #fff;
+    /* box-shadow: 0 20px 60px #46A2FD; */
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.item-wrapper {
+    display: flex;
+    text-decoration: none;
+    color: black;
+
+}
+
+.item-imagen {
+    text-align: center;
+}
+
+.item-resultado .item-imagen {
+    margin: 25px 0px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.item-resultado .item-imagen img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    /* margin: 15px 15px; */
+    /* margin: 50% 0%; */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-texto {
+    width: 70%;
+    padding: 0px 0px;
+    padding-left: 8%;
+}
+
+/* .item-texto h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 2px;
+} */
+
+.item-texto .articulo-busq-titulo{
+    padding: 0;
+    border: 0;
+    /* color: #08c; */
+    color: rgb(205, 92, 92);
+    /* text-transform: uppercase; */
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.item-texto .articulo-busq-tipo {
+    margin-top: 7px;
+    font-size: 11px;
+    color: black;
+}
+
+.item-texto .articulo-busq-estado {
+    font-size: 11px;
+}
+
+.item-texto .articulo-busq-precio {
+    margin-top: 20px;
+    color: #333;
+    display: -webkit-flex; /*Para que lo soporten mas navegadores*/
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 8px;
+    line-height: 1.25;
+}
+
+.item-texto .articulo-busq-descripcion_corta{
+    margin-top: 3px;
+    font-size: 11px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+}
+
+
+.item-texto p {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* --boton favoritos -----*/
+.favorito {
+    width: 40px;
+    height: 40px;
+    line-height: 47px;
+    border-radius: 50%;
+    border: 1px solid #46A2FD;
+    text-align: center;
+    font-size: 18px;
+    color: #707070;
+    cursor: pointer;
+}
+
+
+
+.btn-ver{
+    text-decoration: none;
+    padding: 7px 20px;
+    margin-top: 10px;
+    border: none;
+    font-size: 12px;
+    background: rgb(192, 41, 41);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+.btn-ver a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (min-width:480px) {
+    .main__about__description .column:nth-child(2) {
+        width: 70%;
+        padding: 0px;
+        font-size: 0.9em;
+    }
+    .main__about__description .column:nth-child(1) {
+        width: 100%;
+    }
+/*---Estilos columna Lista de resultados---------*/
+
+    /*---lista de productos-----------*/
+    .columna2 {
+        margin: 0% 0%;
+    }
+
+    /*---wrapper de productos---------*/
+
+    .item-resultado {
+        margin: 1% 0%;
+        width: 100%;
+        height: 215px;
+        background: #fff;
+        /* box-shadow: 0 20px 60px #46A2FD; */
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+    }
+
+
+
+    .item-wrapper {
+        display: flex;
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+
+
+
+    .item-texto {
+        width: 70%;
+        margin: 0%;
+        padding: 15px 0;
+        padding-left: 10%;
+    }
+
+    .item-fav{
+        width: 10%;
+    }
+
+
+    .item-texto .articulo-busq-tipo {
+        margin-top: 7px;
+        font-size: 11px;
+        color: black;
+    }
+
+    .item-texto .articulo-busq-estado {
+        font-size: 11px;
+    }
+
+    .item-texto .articulo-busq-precio {
+        font-size: 15px;
+        margin-top: 4px;
+        margin-bottom: 3px;
+    }
+
+
+    .item-texto .articulo-busq-descripcion_corta {
+        font-size: 10px;
+    }
+
+    .item-texto p {
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    /* --boton favoritos -----*/
+    .favorito {
+        width: 29px;
+        height: 29px;
+        line-height: 37px;
+        border-radius: 50%;
+        border: 1px solid rgb(205, 92, 92);
+        text-align: center;
+        font-size: 17px;
+        color: #707070;
+        cursor: pointer;
+    }
+
+
+    .btn-ver {
+        margin-top: 5px;
+        font-size: 11px;
+    }
+
+
+    /* antes era button */
+    .btn-ver{
+        padding: 7px 20px;
+        margin-top: 15px;
+        border: none;
+        font-size: 12px;
+        background: rgb(192, 41, 41);
+        font-weight: 600;
+        cursor: pointer;
+        color: white;
+        outline: none;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+}
+
+@media screen and (min-width:768px) {
+    /*---Cajas resultado busqueda----------------------------------------------------*/
+    .item-texto {
+        padding: 6px 0px;
+        padding-left: 10%;
+    }
+
+    
+    .item-texto .articulo-busq-precio {
+        margin-top: 20px;
+        color: #333;
+        display: -webkit-flex; /*Para que lo soporten mas navegadores*/
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.25;
+    }
+
+    .btn-ver {
+        margin-top: 5px;
+
+    }
+
+    .item-resultado .item-imagen{
+        width: 15%;
+    }
+
+    .item-resultado .item-texto{
+        width: 75%;
+    }
+
+    .item-resultado .item-fav{
+        width: 10%;
+    }
+
+    .item-texto .articulo-busq-titulo{
+        font-size: 19px;
+    } 
+
+}
