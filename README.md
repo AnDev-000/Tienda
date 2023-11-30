@@ -1,2 +1,2 @@
 # Tienda
-Proyecto de carrera, Pagina E-Commerce
+Proyecto de carrera, Pagina E-Commerce responsive
